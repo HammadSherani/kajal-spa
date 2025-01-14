@@ -1,38 +1,18 @@
 @include('website/attachments/head')
 @include('website/attachments/headerTwo')
-
-<!-- INNER PAGE WRAPPER
-			============================================= -->	
 			<div class="inner-page-wrapper">
-
-
-
-
-				<!-- PAGE HERO
-				============================================= -->	
 				<section id="blogs-page" class="bg-fixed wide-100 page-hero-section division">
 					<div class="container">	
-
-
-						<!-- PAGE HERO TEXT -->
 						<div class="row">	
 							<div class="col-md-10 col-xl-8 offset-md-1 offset-xl-2">
 								<div class="hero-txt text-center white-color">
-
-									<!-- Title -->
 									<h2 class="h2-lg">Latest News & Events</h2>
-
-									<!-- Text -->
 									<p class="p-lg">Sapien gravida donec pretium ipsum porta justo integer at feugiat velna vitae auctor 
 									   an integera magna purus
 									</p>
-
 								</div>
 							</div>	
-						</div>    <!-- END PAGE HERO TEXT -->
-
-
-						<!-- BREADCRUMB -->
+						</div>    
 						<div id="breadcrumb">
 							<div class="row">						
 								<div class="col">
@@ -46,109 +26,53 @@
 									</div>
 								</div>
 							</div> 
-						</div>	<!-- END BREADCRUMB -->
-
-
-					</div>	   <!-- End container --> 
-				</section>	<!-- END PAGE HERO -->
-
-
-
-
-				<!-- BLOG-1
-				============================================= -->
+						</div>	
+					</div>	   
+				</section>	
 				<section id="blog-1" class="bg-color-01 wide-60 blog-section division">				
 					<div class="container">
-
-
-						<!-- BLOG POSTS HOLDER -->
 					 	<div class="row">
-
-
-					 		<!-- BLOG POST #1 -->
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
-
-					 				<!-- BLOG POST IMAGE -->
 						 			<div class="blog-post-img">
 										<img class="img-fluid" src="images/blog/img-01.jpg" alt="blog-post-image" />	
 									</div>
-
-					 				<!-- BLOG POST TITLE -->
 									<div class="blog-post-txt">
-
-										<!-- Post Data -->
 										<span class="txt-color-06">Skincare</span>
-
-										<!-- Post Title -->
 										<h5 class="h5-sm txt-color-01">
 											<a href="single-post.html">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
-
-										<!-- Post Text -->
 										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
 										   blandit sapien gravida donec ipsum undo porta justo...
 										</p>
-
-										<!-- Post Author -->
 										<p class="post-author txt-color-05">Stacey Richardson - Oct 07, 2020</p>	
-
 									</div>
-
 								</div>
-					 		</div>	<!-- END  BLOG POST #1 -->
-
-
-					 		<!-- BLOG POST #2 -->
+					 		</div>	
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
-
-					 				<!-- BLOG POST IMAGE -->
 						 			<div class="blog-post-img">
 										<img class="img-fluid" src="images/blog/img-02.jpg" alt="blog-post-image" />	
 									</div>
-
-					 				<!-- BLOG POST TEXT -->
 									<div class="blog-post-txt">
-
-										<!-- Post Data -->
 										<span class="txt-color-06">Massage Therapy</span>
-
-										<!-- Post Title -->
 										<h5 class="h5-sm txt-color-01">
 											<a href="single-post.html">Tempor blandit sapien at gravida donec ipsum</a>
 										</h5>
-
-										<!-- Post Text -->
 										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
 										   blandit sapien gravida donec ipsum undo porta justo...
 										</p>
-
-										<!-- Post Author -->
 										<p class="post-author txt-color-05">Jennifer Harper - Oct 02, 2020</p>	
-
 									</div>
-
 								</div>
-					 		</div>	<!-- END  BLOG POST #2 -->
-
-
-					 		<!-- BLOG POST #3 -->
+					 		</div>	
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
-
-					 				<!-- BLOG POST IMAGE -->
 						 			<div class="blog-post-img">
 										<img class="img-fluid" src="images/blog/img-03.jpg" alt="blog-post-image" />	
 									</div>
-
-					 				<!-- BLOG POST TEXT -->
 									<div class="blog-post-txt">
-
-										<!-- Post Data -->
 										<span class="txt-color-06">Aromatherapy</span>
-
-										<!-- Post Title -->
 										<h5 class="h5-sm txt-color-01"><a href="single-post.html">Neque dolor primis a libero tempus an impedit 
 										   tempor</a>
 										</h5>
