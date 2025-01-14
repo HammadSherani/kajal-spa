@@ -24,13 +24,13 @@
                 <!-- MAIN MENU -->
                 <nav class="wsmenu clearfix">
                     <ul class="wsmenu-list">
-                        <li class="nl-simple" aria-haspopup="true"><a href="gift-cards.html">About Us</a>
+                        <li class="nl-simple" aria-haspopup="true"><a href="about">About Us</a>
                         </li>
-                        <li class="nl-simple" aria-haspopup="true"><a href="gift-cards.html">Services</a>
+                        <li class="nl-simple" aria-haspopup="true"><a href="service">Services</a>
                         </li>
-                        <li class="nl-simple" aria-haspopup="true"><a href="gift-cards.html">Blogs</a>
+                        <li class="nl-simple" aria-haspopup="true"><a href="blog">Blogs</a>
                         </li>
-                        <li class="nl-simple" aria-haspopup="true"><a href="contacts.html">Contact Us</a></li>
+                        <li class="nl-simple" aria-haspopup="true"><a href="contact-us">Contact Us</a></li>
                         <li class="nl-simple header-phone" aria-haspopup="true">
                             <a href="tel:123456789"><span class="bg-color-09 white-color"><i
                                         class="fas fa-phone"></i></span>+12 34567889</a>
