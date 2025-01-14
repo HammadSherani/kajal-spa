@@ -34,6 +34,7 @@ class BlogController extends Controller
             'content' => 'required',
         ]);
 
+        $validatedData['slug'] = str_replace(' ', '-', strtolower($request->title));
 
         Blog::create($validatedData);
 
@@ -53,7 +54,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        return view('blogs.show', compact('blog'));
+        return view('blogs.edit', compact('blog'));
     }
 
     /**
@@ -65,6 +66,7 @@ class BlogController extends Controller
             'title' => 'required|min:3',
             'content' => 'required',
         ]);
+        $validatedData['slug'] = str_replace(' ', '-', strtolower($request->title));
 
         $blog->update($validatedData);
 

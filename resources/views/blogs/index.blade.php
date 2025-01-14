@@ -33,9 +33,13 @@
                     <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                         <p class="text-gray-900 whitespace-no-wrap">{{ $blog->created_at }}</p>
                     </td>
-                    <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                    <td class="px-5 py-5 text-sm bg-white border-b border-gray-200 flex">
                         <a class="text-yellow-500 hover:underline font-bold" href="{{route('blogs.edit', ['blog' => $blog])}}">Edit</a>
-                        <a class="ml-5 text-red-500 hover:underline font-bold" href="{{route('blogs.destroy', ['blog' => $blog])}}">Delete</a>
+                        <form action="{{route('blogs.destroy', ['blog' => $blog])}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button class="ml-5 text-red-500 hover:underline font-bold" type="submit">Delete</button>
+                        </form>
                     </td>
                 </tr>
             @endforeach
