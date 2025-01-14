@@ -35,12 +35,12 @@
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
 						 			<div class="blog-post-img">
-										<img class="img-fluid" src="images/blog/img-01.jpg" alt="blog-post-image" />	
+										<img class="img-fluid" src="/website/assets/images/blog/img-01.jpg" alt="blog-post-image" />	
 									</div>
 									<div class="blog-post-txt">
 										<span class="txt-color-06">Skincare</span>
 										<h5 class="h5-sm txt-color-01">
-											<a href="single-post.html">Quaerat neque purus ipsum neque dolor primis libero</a>
+											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
 										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
 										   blandit sapien gravida donec ipsum undo porta justo...
@@ -52,12 +52,12 @@
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
 						 			<div class="blog-post-img">
-										<img class="img-fluid" src="images/blog/img-02.jpg" alt="blog-post-image" />	
+										<img class="img-fluid" src="/website/assets/images/blog/img-02.jpg" alt="blog-post-image" />	
 									</div>
 									<div class="blog-post-txt">
 										<span class="txt-color-06">Massage Therapy</span>
 										<h5 class="h5-sm txt-color-01">
-											<a href="single-post.html">Tempor blandit sapien at gravida donec ipsum</a>
+											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
 										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
 										   blandit sapien gravida donec ipsum undo porta justo...
@@ -69,12 +69,12 @@
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
 						 			<div class="blog-post-img">
-										<img class="img-fluid" src="images/blog/img-03.jpg" alt="blog-post-image" />	
+										<img class="img-fluid" src="/website/assets/images/blog/img-03.jpg" alt="blog-post-image" />	
 									</div>
 									<div class="blog-post-txt">
 										<span class="txt-color-06">Aromatherapy</span>
-										<h5 class="h5-sm txt-color-01"><a href="single-post.html">Neque dolor primis a libero tempus an impedit 
-										   tempor</a>
+										<h5 class="h5-sm txt-color-01">
+                                            <a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
 
 										<!-- Post Text -->
@@ -97,7 +97,7 @@
 
 					 				<!-- BLOG POST IMAGE -->
 						 			<div class="blog-post-img">
-										<img class="img-fluid" src="images/blog/img-18.jpg" alt="blog-post-image" />	
+										<img class="img-fluid" src="/website/assets/images/blog/img-18.jpg" alt="blog-post-image" />	
 									</div>
 
 					 				<!-- BLOG POST TITLE -->
@@ -108,7 +108,7 @@
 
 										<!-- Post Title -->
 										<h5 class="h5-sm txt-color-01">
-											<a href="single-post.html">Massa placerat bibendum and purus aliquet elementum</a>
+											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
 
 										<!-- Post Text -->
@@ -131,7 +131,7 @@
 
 					 				<!-- BLOG POST IMAGE -->
 						 			<div class="blog-post-img">
-										<img class="img-fluid" src="images/blog/img-17.jpg" alt="blog-post-image" />	
+										<img class="img-fluid" src="/website/assets/images/blog/img-17.jpg" alt="blog-post-image" />	
 									</div>
 
 					 				<!-- BLOG POST TEXT -->
@@ -142,7 +142,7 @@
 
 										<!-- Post Title -->
 										<h5 class="h5-sm txt-color-01">
-											<a href="single-post.html">Neque dolor primis a libero tempus and tempor</a>
+											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
 
 										<!-- Post Text -->
@@ -165,7 +165,7 @@
 
 					 				<!-- BLOG POST IMAGE -->
 						 			<div class="blog-post-img">
-										<img class="img-fluid" src="images/blog/img-19.jpg" alt="blog-post-image" />	
+										<img class="img-fluid" src="/website/assets/images/blog/img-19.jpg" alt="blog-post-image" />	
 									</div>
 
 					 				<!-- BLOG POST TEXT -->
@@ -176,7 +176,7 @@
 
 										<!-- Post Title -->
 										<h5 class="h5-sm txt-color-01">
-											<a href="single-post.html">Maecenas gravida at porttitor vehicula magna luctus</a>
+											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
 										</h5>
 
 										<!-- Post Text -->
@@ -277,7 +277,7 @@
 
 									<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be 
 									displayed (e.g 416 x 120  pixels) -->
-									<img src="images/logo-01.png" width="204" height="60" alt="footer-logo">
+									<img src="/website/assets/images/logo-01.png" width="204" height="60" alt="footer-logo">
 
 									<!-- Text -->	
 									<p class="txt-color-05 mt-20">Aliquam nullam tempor sapien at gravida donec congue ipsum a porta magna and 
@@ -344,12 +344,12 @@
 
 									<!-- Instagram Images -->
 									<ul class="text-center clearfix">
-										<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-01.jpg" alt="insta-img"></a></li>
-										<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-02.jpg" alt="insta-img"></a></li>
-										<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-03.jpg" alt="insta-img"></a></li>
-										<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-04.jpg" alt="insta-img"></a></li>
-										<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-05.jpg" alt="insta-img"></a></li>
-										<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-06.jpg" alt="insta-img"></a></li>	
+										<li><a href="#" target="_blank"><img class="insta-img" src="/website/assets/images/instagram/img-01.jpg" alt="insta-img"></a></li>
+										<li><a href="#" target="_blank"><img class="insta-img" src="/website/assets/images/instagram/img-02.jpg" alt="insta-img"></a></li>
+										<li><a href="#" target="_blank"><img class="insta-img" src="/website/assets/images/instagram/img-03.jpg" alt="insta-img"></a></li>
+										<li><a href="#" target="_blank"><img class="insta-img" src="/website/assets/images/instagram/img-04.jpg" alt="insta-img"></a></li>
+										<li><a href="#" target="_blank"><img class="insta-img" src="/website/assets/images/instagram/img-05.jpg" alt="insta-img"></a></li>
+										<li><a href="#" target="_blank"><img class="insta-img" src="/website/assets/images/instagram/img-06.jpg" alt="insta-img"></a></li>	
 									</ul>
 															
 								</div>
