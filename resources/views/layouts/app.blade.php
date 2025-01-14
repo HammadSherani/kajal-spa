@@ -12,6 +12,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @stack('head')
     </head>
     <body>
         <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-slate-200 font-roboto">
@@ -33,5 +34,12 @@
                 </main>
             </div>
         </div>
+
+        @stack('script')
+        @session('success')
+            <script>
+                alert('{{session("success")}}')
+            </script>
+        @endsession
     </body>
 </html>
