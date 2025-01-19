@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,30 +38,22 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::get('/', function () {
-    return view('website.index');
-});
+Route::get('/', [WebController::class, 'index']);
+Route::get('/blog', [WebController::class, 'blog']);
+Route::get('/blog/{slug}', [WebController::class, 'blogDetail']);
+Route::get('/service', [WebController::class, 'service']);
+Route::get('/contact', [WebController::class, 'contact']);
+Route::get('/about', [WebController::class, 'about']);
 
 
-Route::get('/blog', function () {
-    return view('website.blog.index');
-});
 
 
-Route::get('/blog/{slug}', function () {
-    return view('website.blog.detail');
-});
 
-Route::get('/service', function () {
-    return view('website.services.index');
-});
 
-Route::get('/contact', function () {
-    return view('website.contact.index');
-});
-Route::get('/about', function () {
-    return view('website.about.index');
-});
+
+
+
+
 
 
 require __DIR__.'/auth.php';

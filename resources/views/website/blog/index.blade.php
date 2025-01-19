@@ -32,165 +32,32 @@
 				<section id="blog-1" class="bg-color-01 wide-60 blog-section division">				
 					<div class="container">
 					 	<div class="row">
+
+                            @foreach($blogs as $blog)
+                             
 					 		<div class="col-md-6 col-lg-4">
 					 			<div class="blog-post">
 						 			<div class="blog-post-img">
 										<img class="img-fluid" src="/website/assets/images/blog/img-01.jpg" alt="blog-post-image" />	
 									</div>
 									<div class="blog-post-txt">
-										<span class="txt-color-06">Skincare</span>
-										<h5 class="h5-sm txt-color-01">
+										<span class="txt-color-06">{{$blog->title}}</span>
+										{{-- <h5 class="h5-sm txt-color-01">
 											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
-										</h5>
-										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-										   blandit sapien gravida donec ipsum undo porta justo...
+										</h5> --}}
+										<p class="txt-color-05">{{$blog->content}}
 										</p>
-										<p class="post-author txt-color-05">Stacey Richardson - Oct 07, 2020</p>	
+										<p class="post-author txt-color-05">Stacey Richardson - {{$blog->created_at}}</p>	
 									</div>
 								</div>
 					 		</div>	
-					 		<div class="col-md-6 col-lg-4">
-					 			<div class="blog-post">
-						 			<div class="blog-post-img">
-										<img class="img-fluid" src="/website/assets/images/blog/img-02.jpg" alt="blog-post-image" />	
-									</div>
-									<div class="blog-post-txt">
-										<span class="txt-color-06">Massage Therapy</span>
-										<h5 class="h5-sm txt-color-01">
-											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
-										</h5>
-										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-										   blandit sapien gravida donec ipsum undo porta justo...
-										</p>
-										<p class="post-author txt-color-05">Jennifer Harper - Oct 02, 2020</p>	
-									</div>
-								</div>
-					 		</div>	
-					 		<div class="col-md-6 col-lg-4">
-					 			<div class="blog-post">
-						 			<div class="blog-post-img">
-										<img class="img-fluid" src="/website/assets/images/blog/img-03.jpg" alt="blog-post-image" />	
-									</div>
-									<div class="blog-post-txt">
-										<span class="txt-color-06">Aromatherapy</span>
-										<h5 class="h5-sm txt-color-01">
-                                            <a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
-										</h5>
 
-										<!-- Post Text -->
-										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-										   blandit sapien gravida donec ipsum undo porta justo...
-										</p>
+                            @endforeach
 
-										<!-- Post Author -->
-										<p class="post-author txt-color-05">Stacey Richardson - Sep 22, 2020</p>	
+                            
+                        
 
-									</div>
-
-								</div>
-					 		</div>	<!-- END  BLOG POST #3 -->
-
-
-					 		<!-- BLOG POST #4 -->
-					 		<div class="col-md-6 col-lg-4">
-					 			<div class="blog-post">
-
-					 				<!-- BLOG POST IMAGE -->
-						 			<div class="blog-post-img">
-										<img class="img-fluid" src="/website/assets/images/blog/img-18.jpg" alt="blog-post-image" />	
-									</div>
-
-					 				<!-- BLOG POST TITLE -->
-									<div class="blog-post-txt">
-
-										<!-- Post Data -->
-										<span class="txt-color-06">Herbal Care</span>
-
-										<!-- Post Title -->
-										<h5 class="h5-sm txt-color-01">
-											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
-										</h5>
-
-										<!-- Post Text -->
-										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-										   blandit sapien gravida donec ipsum undo porta justo...
-										</p>
-
-										<!-- Post Author -->
-										<p class="post-author txt-color-05">Rodney Stratton - Sep 14, 2020</p>	
-
-									</div>
-
-								</div>
-					 		</div>	<!-- END  BLOG POST #4 -->
-
-
-					 		<!-- BLOG POST #5 -->
-					 		<div class="col-md-6 col-lg-4">
-					 			<div class="blog-post">
-
-					 				<!-- BLOG POST IMAGE -->
-						 			<div class="blog-post-img">
-										<img class="img-fluid" src="/website/assets/images/blog/img-17.jpg" alt="blog-post-image" />	
-									</div>
-
-					 				<!-- BLOG POST TEXT -->
-									<div class="blog-post-txt">
-
-										<!-- Post Data -->
-										<span class="txt-color-06">Massage Therapy</span>
-
-										<!-- Post Title -->
-										<h5 class="h5-sm txt-color-01">
-											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
-										</h5>
-
-										<!-- Post Text -->
-										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-										   blandit sapien gravida donec ipsum undo porta justo...
-										</p>
-
-										<!-- Post Author -->
-										<p class="post-author txt-color-05">Jane Smith - Sep 03, 2020</p>	
-
-									</div>
-
-								</div>
-					 		</div>	<!-- END  BLOG POST #5 -->
-
-
-					 		<!-- BLOG POST #6 -->
-					 		<div class="col-md-6 col-lg-4">
-					 			<div class="blog-post">
-
-					 				<!-- BLOG POST IMAGE -->
-						 			<div class="blog-post-img">
-										<img class="img-fluid" src="/website/assets/images/blog/img-19.jpg" alt="blog-post-image" />	
-									</div>
-
-					 				<!-- BLOG POST TEXT -->
-									<div class="blog-post-txt">
-
-										<!-- Post Data -->
-										<span class="txt-color-06">Facials</span>
-
-										<!-- Post Title -->
-										<h5 class="h5-sm txt-color-01">
-											<a href="/blog/detail">Quaerat neque purus ipsum neque dolor primis libero</a>
-										</h5>
-
-										<!-- Post Text -->
-										<p class="txt-color-05">Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor at 
-										   blandit sapien gravida donec ipsum undo porta justo...
-										</p>
-
-										<!-- Post Author -->
-										<p class="post-author txt-color-05">Rodney Stratton - Aug 19, 2020</p>	
-
-									</div>
-
-								</div>
-					 		</div>	<!-- END  BLOG POST #6 -->
+					 		
 
 
 						</div>	<!-- END BLOG POSTS HOLDER -->
