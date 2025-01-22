@@ -15,7 +15,13 @@ return new class extends Migration
             $table->id();
             $table->text('title');
             $table->text('slug');
+            $table->text('description');
             $table->longText('content');
+            $table->text('meta_title');
+            $table->text('meta_keyword');
+            $table->text('meta_description');
+            $table->text('cannonical_url');
+            $table->text('banner');
             $table->timestamps();
         });
     }
