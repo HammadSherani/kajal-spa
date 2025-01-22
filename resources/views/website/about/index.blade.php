@@ -21,7 +21,7 @@
                      <div class="hero-txt text-center white-color">
 
                          <!-- Title -->
-                         <h2 class="h2-lg">About Spa Magic</h2>
+                         <h2 class="h2-lg">About</h2>
 
                          <!-- Text -->
                          <p class="p-lg">Sapien gravida donec pretium ipsum porta justo integer at feugiat velna vitae

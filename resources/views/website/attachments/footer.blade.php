@@ -14,8 +14,8 @@
 
                     <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be
 displayed (e.g 416 x 120  pixels) -->
-                    <img src="/website/assets/images/logo-01.png" width="204" height="60"
-                        alt="footer-logo">
+                    {{-- <img src="/website/assets/images/logo-01.png" width="204" height="60"
+                        alt="footer-logo"> --}}
 
                     <!-- Footer Contacts -->
                     <div class="footer-contacts txt-color-05 mt-25">
@@ -141,7 +141,7 @@ displayed (e.g 416 x 120  pixels) -->
                 <!-- FOOTER COPYRIGHT -->
                 <div class="col-lg-6">
                     <div class="footer-copyright">
-                        <p>&copy; 2020 Spa Magic. All Rights Reserved</p>
+                        <p>&copy; 2026. All Rights Reserved</p>
                     </div>
                 </div>
 

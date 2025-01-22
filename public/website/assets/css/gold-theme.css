@@ -1225,7 +1225,7 @@ ol.digit-list p {
 .txt-color-06 li, 
 .txt-color-06 i,
 .txt-color-06 span, 
-.white-color .txt-color-06 { color: #ebb650; }
+.white-color .txt-color-06 { color: #ebb650 !important; }
 
 
 
