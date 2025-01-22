@@ -21,10 +21,16 @@ class WebController extends Controller
     }
 
 
-    public function blogDetail()
+    public function show($slug)
     {
-        // $blogs = Blog::all();
-        return view('website.blog.detail');
+        // Database se blog find karein slug ke through
+        $blog = Blog::where('slug', $slug)->firstOrFail();
+        $relatedBlog = Blog::latest()->take(2)->get();
+        $popularBlog = Blog::latest()->take(3)->get();
+
+
+        // View return karein
+        return view('website.blog.detail', compact('blog', 'relatedBlog', 'popularBlog'));
     }
     public function service()
     {
