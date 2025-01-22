@@ -18,7 +18,7 @@
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="demo-1.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Our Blog</li>
                                 </ol>
                             </nav>
@@ -35,15 +35,15 @@
                 @foreach ($blogs as $blog)
                     <div class="col-md-6 col-lg-4">
                         <div class="blog-post">
-                            <a href="/blog/detail/{{ $blog->slug }}">
+                            <a href="/blog/{{ $blog->slug }}">
                                 <div class="blog-post-img">
-                                    <img class="img-fluid" src="{{ asset('uploads/banners/' . $blog->image) }}"
+                                    <img class="img-fluid" src="{{ asset($blog->banner) }}"
                                         alt="blog-post-image" />
                                 </div>
                                 <div class="blog-post-txt">
                                     <span class="txt-color-06">
-                                        <a href="/blog/detail/{{ $blog->slug }}" class="fw-bold" style="color: #efa697 !important; font-weight: 700 !important; ">
-                                            {{ htmlspecialchars($blog->title) }}
+                                        <a href="/blog/{{ $blog->slug }}" class="fw-bold" style="color: #efa697 !important; font-weight: 700 !important; ">
+                                            {{ $blog->title }}
                                         </a>
                                     </span>
                                     <p class="txt-color-05">{{ Str::words(strip_tags($blog->description), 20, '...') }}

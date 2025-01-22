@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-md-10 col-xl-8 offset-md-1 offset-xl-2">
                     <div class="hero-txt text-center white-color">
-                        <h2 class="h2-lg">{{$blog->title}}</h2>
+                        <h2 class="h2-lg">{{ $blog->title }}</h2>
                         {{-- <p class="p-lg">Sapien gravida donec pretium ipsum porta justo integer at feugiat velna vitae
                             auctor
                             an integera magna purus
@@ -22,8 +22,8 @@
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ url('/blog') }}">Blog</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Blog Post</li>
                                 </ol>
                             </nav>
@@ -44,8 +44,7 @@
 
                         <!-- BLOG POST IMAGE -->
                         <div class="blog-post-img">
-                            <img class="img-fluid" src="{{ asset('/uploads/banners/' . $blog->image) }}"
-                                alt="blog-post-image">
+                            <img class="img-fluid" src="{{ asset($blog->banner) }}" alt="blog-post-image">
                         </div>
 
 
@@ -65,7 +64,7 @@
 
                         <!-- POST TEXT -->
                         <div class="single-post-txt">
-                            {{ $blog->description }}
+                            {!! $blog->content !!}
                         </div> <!-- END POST TEXT -->
 
 
@@ -114,14 +113,14 @@
                                 @foreach ($relatedBlog as $relatedBlog)
                                     <div class="col-md-6">
                                         <div class="blog-post">
-                                            <a href="/blog/detail/{{ $relatedBlog->slug }}">
+                                            <a href="/blog/{{ $relatedBlog->slug }}">
                                                 <div class="blog-post-img">
-                                                    <img class="img-fluid" src="{{ asset('/uploads/banners/' . $relatedBlog->image) }}"
+                                                    <img class="img-fluid" src="{{ asset($relatedBlog->banner) }}"
                                                         alt="blog-post-image" />
                                                 </div>
                                                 <div class="blog-post-txt">
                                                     <span class="txt-color-06">
-                                                        <a href="/blog/detail/{{ $relatedBlog->slug }}" class="fw-bold"
+                                                        <a href="/blog/{{ $relatedBlog->slug }}" class="fw-bold"
                                                             style="color: #efa697 !important; font-weight: 700 !important; ">
                                                             {{ htmlspecialchars($relatedBlog->title) }}
                                                         </a>
@@ -154,19 +153,19 @@
                         <ul class="popular-posts">
 
                             @foreach ($popularBlog as $popularBlog)
-                            <li class="clearfix d-flex align-items-center">
+                                <li class="clearfix d-flex align-items-center">
 
-                                <!-- Image -->
-                                <img class="img-fluid" src={{asset('/uploads/banners/'.$popularBlog->image)}}
-                                    alt="blog-post-preview">
+                                    <!-- Image -->
+                                    <img class="img-fluid" src={{ asset($popularBlog->banner) }}
+                                        alt="blog-post-preview">
 
-                                <!-- Text -->
-                                <div class="post-summary">
-                                    <a href="/blog/detail/{{ $relatedBlog->slug }}" class="txt-color-05">{{$popularBlog->title}}</a>
-                                </div>
+                                    <!-- Text -->
+                                    <div class="post-summary">
+                                        <a href="/blog/{{ $relatedBlog->slug }}"
+                                            class="txt-color-05">{{ $popularBlog->title }}</a>
+                                    </div>
 
-                            </li>
-
+                                </li>
                             @endforeach
                         </ul>
                     </div>
