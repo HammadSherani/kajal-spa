@@ -16,7 +16,7 @@
                 Banner
             </label>
             <input type="file" required name="banner" id="banner" accept="image/*"
-                class="w-full rounded border border-indigo-500 focus:ring-indigo-500">
+                class="w-full rounded border border-indigo-500 focus:ring-indigo-500 bg-white p-1">
             @error('banner')
                 <span class="text-red-500">
                     {{ $message }}

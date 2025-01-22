@@ -40,11 +40,11 @@ class BlogController extends Controller
             'content' => 'required',
             'banner' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        
+
         $banner = $request->file('banner');
         $name_gen = hexdec(uniqid()) . '.' . $banner->getClientOriginalExtension();
         $banner->move('uploads/banners', $name_gen);
-        
+
 
         // $validatedData['slug'] = str_replace(' ', '-', strtolower($request->title));
         $validatedData['banner'] = "uploads/banners/$name_gen";
@@ -77,9 +77,23 @@ class BlogController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|min:3',
-            'content' => 'required',
+            'slug' => 'required|min:3',
+            'cannonical_url' => 'required|min:3',
+            'meta_title' => 'required|min:3',
+            'meta_description' => 'required|min:3',
+            'meta_keyword' => 'required|min:3',
+            'description' => 'required|min:3',
+            'content' => 'required'
         ]);
-        $validatedData['slug'] = str_replace(' ', '-', strtolower($request->title));
+        if ($request->banner) {
+            $request->validate([
+                'banner' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+            $banner = $request->file('banner');
+            $name_gen = hexdec(uniqid()) . '.' . $banner->getClientOriginalExtension();
+            $banner->move('uploads/banners', $name_gen);
+            $validatedData['banner'] = 'uploads/banners/' . $name_gen;
+        }
 
         $blog->update($validatedData);
 
@@ -91,6 +105,7 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
+        unlink($blog->banner);
         $blog->delete();
         return redirect()->back()->with('success', 'Blog deleted successfully.');
     }
