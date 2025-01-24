@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/', [WebController::class, 'index']);
 Route::get('/blog', [WebController::class, 'blog']);
-Route::get('/blog/detail/{slug}', [WebController::class, 'show']);
+Route::get('/blog/{slug}', [WebController::class, 'show']);
 Route::get('/service', [WebController::class, 'service']);
 Route::get('/contact', [WebController::class, 'contact']);
 Route::get('/about', [WebController::class, 'about']);
