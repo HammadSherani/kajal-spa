@@ -36,39 +36,11 @@
 
 <!-- Custom Script -->
 <script src="{{asset("/website/assets/js/custom.js")}}"></script>
-
 <script>
     $('.video-play').vide("images/video/video", {
         posterType: "jpg"
     });
 </script>
-
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-<!-- [if lt IE 9]>
-<script src="js/html5shiv.js" type="text/javascript"></script>
-<script src="js/respond.min.js" type="text/javascript"></script>
-<![endif] -->
-
-<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
-<!--
-<script>
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-          '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-  })();
-</script>
--->
-
-
 <script src="{{asset("/website/assets/js/changer.js")}}"></script>
 <script defer src="{{asset("/website/assets/js/styleswitch.js")}}"></script>
 

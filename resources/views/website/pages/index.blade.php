@@ -596,32 +596,6 @@
 
 
 
-    <!-- VIDEO-1
-       ============================================= -->
-    <div id="video-1" class="bg-fixed video-section division">
-        <div class="container white-color">
-            <div class="row">
-
-
-                <!-- VIDEO LINK -->
-                <div class="col-md-8 offset-md-2">
-                    <div class="video-1-preview">
-                        <a class="video-popup2" href="https://www.youtube.com/embed/7e90gBu4pas">
-                            <!-- Change the link HERE!!! -->
-
-                            <!-- Play Icon -->
-                            <div class="video-btn bg-color-09">
-                                <div class="video-block-wrapper"><i class="fas fa-play"></i></div>
-                            </div>
-
-                        </a>
-                    </div>
-                </div> <!-- END VIDEO LINK -->
-
-
-            </div> <!-- End row -->
-        </div> <!-- End container -->
-    </div> <!-- END VIDEO-1 -->
 
 
 
