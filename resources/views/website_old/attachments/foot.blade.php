@@ -35,7 +35,7 @@
 
 
 <!-- Custom Script -->
-<script src="/website/assets/js/custom.js"></script>
+<script src="{{asset("/website/assets/js/custom.js")}}"></script>
 
 <script>
     $('.video-play').vide("images/video/video", {
@@ -69,8 +69,8 @@
 -->
 
 
-<script src="/website/assets/js/changer.js"></script>
-<script defer src="/website/assets/js/styleswitch.js"></script>
+<script src="{{asset("/website/assets/js/changer.js")}}"></script>
+<script defer src="{{asset("/website/assets/js/styleswitch.js")}}"></script>
 
 
 </body>

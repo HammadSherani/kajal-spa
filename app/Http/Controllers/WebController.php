@@ -11,7 +11,7 @@ class WebController extends Controller
     public function index()
     {
         
-        return view('website.index');
+        return view('website.pages.index');
     }
 
     public function blog()

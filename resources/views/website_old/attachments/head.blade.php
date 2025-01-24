@@ -30,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
 
     <!-- BOOTSTRAP CSS -->
-    <link href="/website/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset("/website/assets/css/bootstrap.min.css")}}" rel="stylesheet">
 
     <!-- FONT ICONS -->
     <link href="../../../../../use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet"

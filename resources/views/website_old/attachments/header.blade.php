@@ -4,18 +4,19 @@
     <div class="header-wrapper">
         <!-- MOBILE HEADER -->
         <div class="wsmobileheader clearfix">
-            <span class="smllogo"><img src="/website/assets/images/logo-01.png" width="170" height="50"
+            <span class="smllogo"><img src="{{asset('/website/assets/assets/images/logo-01.png')}}" width="170" height="50"
                     alt="mobile-logo" /></span>
             <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
         </div>
         <!-- NAVIGATION MENU -->
         <div class="wsmainfull menu clearfix">
             <div class="wsmainwp clearfix">
-                <div class="desktoplogo"><a href="#hero-12" class="logo-black"><img src="/website/assets/images/1.png"
+                <div class="desktoplogo"><a href="#hero-12" class="logo-black">
+                    <img src="{{asset('/website/assets/assets/images/1.png')}}"
                             width="170" height="50" alt="header-logo"></a></div>
                 <div class="desktoplogo">
                     <a href="#hero-12" class="logo-white">
-                        {{-- <img src="/website/assets/images/logo-white.png" width="170" height="50"
+                        {{-- <img src="{{asset('/website/assets/assets/images/logo-white.png')}}" width="170" height="50"
                             alt="header-logo"> --}}
 
                             <h4 class="white-color mb-0">Kajal Spa</h4>
