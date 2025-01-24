@@ -16,7 +16,7 @@ class WebController extends Controller
 
     public function blog()
     {
-        $blogs = Blog::all();
+        $blogs = Blog::paginate(1);
         return view('website.blog.index', compact('blogs'));
     }
 

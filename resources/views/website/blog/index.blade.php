@@ -7,7 +7,8 @@
                 <div class="col-md-10 col-xl-8 offset-md-1 offset-xl-2">
                     <div class="hero-txt text-center white-color">
                         <h2 class="h2-lg">Latest News & Events</h2>
-                        <p class="p-lg">Discover the art of relaxation and self-care through our spa blog. Explore expert tips, wellness advice, and the latest trends in spa treatments
+                        <p class="p-lg">Discover the art of relaxation and self-care through our spa blog. Explore
+                            expert tips, wellness advice, and the latest trends in spa treatments
                         </p>
                     </div>
                 </div>
@@ -18,7 +19,7 @@
                         <div class="breadcrumb-nav">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Our Blog</li>
                                 </ol>
                             </nav>
@@ -37,12 +38,12 @@
                         <div class="blog-post">
                             <a href="/blog/{{ $blog->slug }}">
                                 <div class="blog-post-img">
-                                    <img class="img-fluid" src="{{ asset($blog->banner) }}"
-                                        alt="blog-post-image" />
+                                    <img class="img-fluid" src="{{ asset($blog->banner) }}" alt="blog-post-image" />
                                 </div>
                                 <div class="blog-post-txt">
                                     <span class="txt-color-06">
-                                        <a href="/blog/{{ $blog->slug }}" class="fw-bold" style="color: #efa697 !important; font-weight: 700 !important; ">
+                                        <a href="/blog/{{ $blog->slug }}" class="fw-bold"
+                                            style="color: #efa697 !important; font-weight: 700 !important; ">
                                             {{ $blog->title }}
                                         </a>
                                     </span>
@@ -54,12 +55,6 @@
                         </div>
                     </div>
                 @endforeach
-
-
-
-
-
-
 
             </div> <!-- END BLOG POSTS HOLDER -->
 
@@ -79,15 +74,39 @@
 
                     <nav aria-label="Page navigation">
                         <ul class="pagination justify-content-center">
-                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i
-                                        class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1 <span
-                                        class="sr-only">(current)</span></a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i
-                                        class="fas fa-angle-right"></i></a></li>
+                            {{-- ? {{print_r($blogs->items());}} --}}
+                            {{-- {{ $blogs->links() }} --}}
+                            <ul class="pagination">
+                                {{-- Previous Page Link --}}
+                                @if ($blogs->onFirstPage())
+                                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i
+                                                class="fas fa-angle-left"></i></a></li>
+                                @else
+                                    <li class="page-item"><a class="page-link" href="{{ $blogs->previousPageUrl() }}"
+                                            tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
+                                @endif
+
+                                {{-- Pagination Links --}}
+                                @foreach ($blogs->links()->elements[0] as $page => $url)
+                                    @if ($page == $blogs->currentPage())
+                                        <li class="page-item active"><a class="page-link"
+                                                href="#">{{ $page }} <span
+                                                    class="sr-only">(current)</span></a></li>
+                                    @else
+                                        <li class="page-item"><a class="page-link"
+                                                href="{{ $url }}">{{ $page }}</a></li>
+                                    @endif
+                                @endforeach
+
+                                {{-- Next Page Link --}}
+                                @if ($blogs->hasMorePages())
+                                    <li class="page-item"><a class="page-link" href="{{ $blogs->nextPageUrl() }}"><i
+                                                class="fas fa-angle-right"></i></a></li>
+                                @else
+                                    <li class="page-item disabled"><a class="page-link" href="#"><i
+                                                class="fas fa-angle-right"></i></a></li>
+                                @endif
+                            </ul>
                         </ul>
                     </nav>
 
@@ -115,7 +134,8 @@
                         <h3 class="h3-xs txt-color-01">For Your First Visit</h3>
 
                         <!-- Text -->
-                        <p class="p-md txt-color-05">Experience ultimate relaxation and rejuvenation at our spa. Indulge in luxurious treatments designed to revitalize your mind, body, and soul.
+                        <p class="p-md txt-color-05">Experience ultimate relaxation and rejuvenation at our spa. Indulge
+                            in luxurious treatments designed to revitalize your mind, body, and soul.
                         </p>
 
                         <!-- Button -->
