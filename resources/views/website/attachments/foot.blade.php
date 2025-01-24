@@ -9,29 +9,30 @@
 
 <!-- EXTERNAL SCRIPTS
 ============================================= -->
-<script src="/website/assets/js/jquery-3.4.1.min.js"></script>
-<script src="/website/assets/js/bootstrap.min.js"></script>
-<script src="/website/assets/js/modernizr.custom.js"></script>
-<script src="/website/assets/js/jquery.easing.js"></script>
-<script src="/website/assets/js/jquery.appear.js"></script>
-<script src="/website/assets/js/jquery.scrollto.js"></script>
-<script src="/website/assets/js/menu.js"></script>
-<script src="/website/assets/js/materialize.js"></script>
-<script src="/website/assets/js/tweenmax.min.js"></script>
-<script src="/website/assets/js/slideshow.js"></script>
-<script src="/website/assets/js/jquery.vide.min.js"></script>
-<script src="/website/assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="/website/assets/js/isotope.pkgd.min.js"></script>
-<script src="/website/assets/js/jquery.flexslider.js"></script>
-<script src="/website/assets/js/owl.carousel.min.js"></script>
-<script src="/website/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="/website/assets/js/hero-form.js"></script>
-<script src="/website/assets/js/contact-form.js"></script>
-<script src="/website/assets/js/comment-form.js"></script>
-<script src="/website/assets/js/booking-form.js"></script>
-<script src="/website/assets/js/jquery.datetimepicker.full.js"></script>
-<script src="/website/assets/js/jquery.validate.min.js"></script>
-<script src="/website/assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="{{ asset('website/assets/js/jquery-3.4.1.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/modernizr.custom.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.easing.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.appear.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.scrollto.js') }}"></script>
+<script src="{{ asset('website/assets/js/menu.js') }}"></script>
+<script src="{{ asset('website/assets/js/materialize.js') }}"></script>
+<script src="{{ asset('website/assets/js/tweenmax.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/slideshow.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.vide.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.flexslider.js') }}"></script>
+<script src="{{ asset('website/assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/hero-form.js') }}"></script>
+<script src="{{ asset('website/assets/js/contact-form.js') }}"></script>
+<script src="{{ asset('website/assets/js/comment-form.js') }}"></script>
+<script src="{{ asset('website/assets/js/booking-form.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.datetimepicker.full.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('website/assets/js/jquery.ajaxchimp.min.js') }}"></script>
+
 
 <!-- Custom Script -->
 <script src="/website/assets/js/custom.js"></script>
