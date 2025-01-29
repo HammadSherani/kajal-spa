@@ -16,6 +16,26 @@
 </head>
 
 <body>
+
+    <!-- PRELOADER SPINNER
+  ============================================= -->
+  <div id="loader-wrapper">
+    <div id="loading">
+        <div class="cssload-loader">
+            <div class="fancy-spinner">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- PAGE CONTENT
+============================================= -->
+
     @include('website.layout.header')
     @yield('content')
     @include('website.layout.footer')
@@ -23,7 +43,6 @@
 
 
 
-    <!-- EXTERNAL SCRIPTS
 ============================================= -->
 <script src="{{ asset('website/assets/js/jquery-3.4.1.min.js') }}"></script>
 <script src="{{ asset('website/assets/js/bootstrap.min.js') }}"></script>

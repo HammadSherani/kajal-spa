@@ -16,8 +16,8 @@ class WebController extends Controller
 
     public function blog()
     {
-        $blogs = Blog::paginate(1);
-        return view('website.blog.index', compact('blogs'));
+        $blogs = Blog::paginate(12);
+        return view('website.pages.blog', compact('blogs'));
     }
 
 
@@ -28,24 +28,22 @@ class WebController extends Controller
         $relatedBlog = Blog::latest()->take(2)->get();
         $popularBlog = Blog::latest()->take(3)->get();
 
-
-        // View return karein
-        return view('website.blog.detail', compact('blog', 'relatedBlog', 'popularBlog'));
+        return view('website.pages.blogDetail', compact('blog', 'relatedBlog', 'popularBlog'));
     }
     public function service()
     {
         // $blogs = Blog::all();
-        return view('website.services.index');
+        return view('website.pages.service');
     }
     public function contact()
     {
         // $blogs = Blog::all();
-        return view('website.contact.index');
+        return view('website.pages.contact');
     }
 
     public function about()
     {
         // $blogs = Blog::all();
-        return view('website.about.index');
+        return view('website.pages.about');
     }
 }

@@ -4,11 +4,9 @@
 
 @include('website/attachments/head')
 @include('website/attachments/headerTwo')
+
+
  <div class="inner-page-wrapper">
-
-
-
-
      <!-- PAGE HERO
     ============================================= -->
      <section id="about-page" class="bg-fixed wide-100 page-hero-section division">
