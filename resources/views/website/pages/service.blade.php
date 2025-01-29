@@ -1,5 +1,6 @@
-@include('website/attachments/head')
-@include('website/attachments/headerTwo')
+@extends('website.app')
+@section('title', 'Service - Kajal SPA')
+@section('content')
 
 
 <div class="inner-page-wrapper">
@@ -655,5 +656,5 @@
         </div>	   <!-- End container -->
     </section>	<!-- END BANNER-5 -->
 </div>
-@include('website/attachments/footer')
-@include('website/attachments/foot')
+
+@endsection

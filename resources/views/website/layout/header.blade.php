@@ -11,29 +11,28 @@
         <!-- NAVIGATION MENU -->
         <div class="wsmainfull menu clearfix">
             <div class="wsmainwp clearfix">
-                <div class="desktoplogo"><a href="#hero-12" class="logo-black">
+                <div class="desktoplogo"><a href="/" class="logo-black">
                     <img src="{{asset('/website/assets/assets/images/1.png')}}"
                             width="170" height="50" alt="header-logo"></a></div>
                 <div class="desktoplogo">
-                    <a href="#hero-12" class="logo-white">
-                        {{-- <img src="{{asset('/website/assets/assets/images/logo-white.png')}}" width="170" height="50"
-                            alt="header-logo"> --}}
+                    <a href="/"   class="{{ request()->is('/') ? 'text-white' : 'text-dark' }} logo-white"  >
+                        
 
-                            <h4 class="white-color mb-0">Kajal Spa</h4>
+                            <h4 class="{{ request()->is('/') ? 'text-white' : 'text-dark' }} white-color mb-0">Kajal Spa</h4>
                     </a>
                 </div>
                 <!-- MAIN MENU -->
                 <nav class="wsmenu clearfix">
                     <ul class="wsmenu-list">
-                        <li class="nl-simple" aria-haspopup="true"><a href="about">About Us</a>
+                        <li class="  nl-simple" aria-haspopup="true"><a class="{{ request()->is('/') ? 'text-white' : 'text-dark' }}" href="/about">About Us</a>
                         </li>
-                        <li class="nl-simple" aria-haspopup="true"><a href="service">Services</a>
+                        <li class="nl-simple" aria-haspopup="true"><a class="{{ request()->is('/') ? 'text-white' : 'text-dark' }}" href="/service">Services</a>
                         </li>
-                        <li class="nl-simple" aria-haspopup="true"><a href="blog">Blogs</a>
+                        <li class="nl-simple" aria-haspopup="true"><a class="{{ request()->is('/') ? 'text-white' : 'text-dark' }}" href="/blog">Blogs</a>
                         </li>
-                        <li class="nl-simple" aria-haspopup="true"><a href="contact-us">Contact Us</a></li>
+                        <li class="nl-simple" aria-haspopup="true"><a class="{{ request()->is('/') ? 'text-white' : 'text-dark' }}" href="/contact">Contact Us</a></li>
                         <li class="nl-simple header-phone" aria-haspopup="true">
-                            <a href="tel:123456789"><span class="bg-color-09 white-color"><i
+                            <a class="{{ request()->is('/') ? 'text-white' : 'text-dark' }}" href="tel:123456789"><span class="bg-color-09 white-color"><i
                                         class="fas fa-phone"></i></span>+12 34567889</a>
                         </li>
 
