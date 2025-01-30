@@ -90,7 +90,8 @@
                             <!-- Image -->
                             <div class="sbox-3-img">
                                 <div class="hover-overlay"> 
-                                    <img class="img-fluid" src="/website/assets/images/serv-04.jpg" alt="service-image">	
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-04.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -123,7 +124,8 @@
                             <!-- Image -->
                             <div class="sbox-3-img">
                                 <div class="hover-overlay"> 
-                                    <img class="img-fluid" src="/website/assets/images/serv-05.jpg" alt="service-image">	
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-05.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -156,7 +158,8 @@
                             <!-- Image -->
                             <div class="sbox-3-img">
                                 <div class="hover-overlay"> 
-                                    <img class="img-fluid" src="/website/assets/images/serv-06.jpg" alt="service-image">	
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-06.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -189,7 +192,8 @@
                             <!-- Image -->
                             <div class="sbox-3-img">
                                 <div class="hover-overlay"> 
-                                    <img class="img-fluid" src="/website/assets/images/serv-07.jpg" alt="service-image">	
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-07.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -222,7 +226,8 @@
                             <!-- Image -->
                             <div class="sbox-3-img">
                                 <div class="hover-overlay"> 
-                                    <img class="img-fluid" src="/website/assets/images/serv-08.jpg" alt="service-image">	
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-08.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -255,7 +260,8 @@
                             <!-- Image -->
                             <div class="sbox-3-img">
                                 <div class="hover-overlay"> 
-                                    <img class="img-fluid" src="/website/assets/images/serv-09.jpg" alt="service-image">	
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-09.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -385,7 +391,8 @@
 
         <!-- Content Image -->
         <div class="content-img pt-30">
-            <div class="ab-img-01"><img class="img-fluid" src="/website/assets/images/ab-img-01.png" alt="content-image"></div>
+            <div class="ab-img-01"><img class="img-fluid" src="{{ asset('website/assets/images/ab-img-01.png') }}" alt="content-image">
+            </div>
         </div>
 
         
@@ -425,7 +432,8 @@
             <div class="row">	
                  <div class="col-md-12">
                     <div class="img-block">
-                        <img class="img-fluid" src="/website/assets/images/image-12.jpg" alt="about-image">
+                        <img class="img-fluid" src="{{ asset('website/assets/images/image-12.jpg') }}" alt="about-image">
+
                     </div>
                 </div>
             </div>
@@ -540,7 +548,8 @@
                             <div class="hover-overlay"> 
 
                                 <!-- Image -->
-                                <img class="img-fluid" src="/website/assets/images/serv-20.jpg" alt="service-image">	
+                                <img class="img-fluid" src="{{ asset('website/assets/images/serv-20.jpg') }}" alt="service-image">
+
                                 <div class="sbox-16-overlay"></div>		
 
                                 <!-- Image Description -->
@@ -561,7 +570,8 @@
                             <div class="hover-overlay"> 
 
                                 <!-- Image -->
-                                <img class="img-fluid" src="/website/assets/images/serv-13.jpg" alt="gallery-image">	
+                                <img class="img-fluid" src="{{ asset('website/assets/images/serv-13.jpg') }}" alt="gallery-image">
+	
                                 <div class="sbox-16-overlay"></div>							
                                 
                                 <!-- Image Description -->
@@ -581,7 +591,8 @@
                             <div class="hover-overlay"> 
 
                                 <!-- Image -->
-                                <img class="img-fluid" src="/website/assets/images/serv-21.jpg" alt="gallery-imagee">	
+                                <img class="img-fluid" src="{{ asset('website/assets/images/serv-21.jpg') }}" alt="gallery-image">
+
                                 <div class="sbox-16-overlay"></div>							
                                 
                                 <!-- Image Description -->
@@ -602,7 +613,8 @@
                             <div class="hover-overlay"> 
 
                                 <!-- Image -->
-                                <img class="img-fluid" src="/website/assets/images/serv-16.jpg" alt="gallery-image">
+                                <img class="img-fluid" src="{{ asset('website/assets/images/serv-16.jpg') }}" alt="gallery-image">
+
                                 <div class="sbox-16-overlay"></div>								
                                 
                                 <!-- Image Description -->

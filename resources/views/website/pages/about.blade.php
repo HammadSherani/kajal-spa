@@ -62,7 +62,7 @@
                 <!-- IMAGE BLOCK -->
                 <div class="col-md-5 col-lg-6">
                     <div class="img-block left-column pc-10 mb-40">
-                        <img class="img-fluid" src="/website/assets/images/image-01.png" alt="about-image">
+                        <img class="img-fluid" src="{{ asset('website/assets/images/image-01.png') }}" alt="about-image">
                     </div>
                 </div>
 
@@ -150,7 +150,8 @@
                         <div class="sbox-1">
 
                             <!-- Image -->
-                            <img class="img-fluid" src="/website/assets/images/serv-01.png" alt="service-image" />
+                            <img class="img-fluid" src="{{ asset('website/assets/images/serv-01.png') }}" alt="service-image">
+
 
                             <!-- Title -->
                             <h5 class="h5-md txt-color-01">Aromatherapy</h5>
@@ -170,7 +171,8 @@
                         <div class="sbox-1">
 
                             <!-- Image -->
-                            <img class="img-fluid" src="/website/assets/images/serv-02.png" alt="service-image" />
+                            <img class="img-fluid" src="{{ asset('website/assets/images/serv-02.png') }}" alt="service-image">
+
 
                             <!-- Title -->
                             <h5 class="h5-md txt-color-01">Relax</h5>
@@ -188,13 +190,10 @@
                     <!-- SERVICE BOX #3 -->
                     <div class="col-md-4">
                         <div class="sbox-1">
-
                             <!-- Image -->
-                            <img class="img-fluid" src="/website/assets/images/serv-03.png" alt="service-image" />
-
+                            <img class="img-fluid" src="{{ asset('website/assets/images/serv-03.png') }}" alt="service-image">
                             <!-- Title -->
                             <h5 class="h5-md txt-color-01">Massage</h5>
-
                             <!-- Text -->
                             <p class="txt-color-05">Porta semper lacus cursus feugiat primis ultrice in ligula risus
                                 auctor tempus dolor
@@ -247,7 +246,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="img-block">
-                        <img class="img-fluid" src="/website/assets/images/image-12.jpg" alt="about-image">
+                        <img class="img-fluid" src="{{ asset('website/assets/images/image-12.jpg') }}" alt="about-image">
+
                     </div>
                 </div>
             </div>
@@ -398,7 +398,8 @@
                             <!-- Image -->
                             <div class="sbox-10-img">
                                 <div class="hover-overlay">
-                                    <img class="img-fluid" src="/website/assets/images/serv-13.jpg" alt="service-image" />
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-13.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -428,7 +429,8 @@
                             <!-- Image -->
                             <div class="sbox-10-img">
                                 <div class="hover-overlay">
-                                    <img class="img-fluid" src="/website/assets/images/serv-14.jpg" alt="service-image" />
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-14.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -459,7 +461,8 @@
                             <!-- Image -->
                             <div class="sbox-10-img">
                                 <div class="hover-overlay">
-                                    <img class="img-fluid" src="/website/assets/images/serv-15.jpg" alt="service-image" />
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-15.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -489,7 +492,8 @@
                             <!-- Image -->
                             <div class="sbox-10-img">
                                 <div class="hover-overlay">
-                                    <img class="img-fluid" src="/website/assets/images/serv-16.jpg" alt="service-image" />
+                                    <img class="img-fluid" src="{{ asset('website/assets/images/serv-16.jpg') }}" alt="service-image">
+
                                 </div>
                             </div>
 
@@ -563,7 +567,8 @@
                     <!-- IMAGE BLOCK -->
                     <div id="pb-img" class="col-lg-4">
                         <div class="pricing-2-img text-center">
-                            <img class="img-fluid" src="/website/assets/images/image-05.jpg" alt="pricing-image" />
+                            <img class="img-fluid" src="{{ asset('website/assets/images/image-05.jpg') }}" alt="pricing-image">
+
                         </div>
                     </div>
 
