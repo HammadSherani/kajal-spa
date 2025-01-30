@@ -1,5 +1,8 @@
 @extends('website.app')
 @section('title', 'Kajal SPA')
+@section('head')
+    
+@endsection
 @section('content')
 
 
