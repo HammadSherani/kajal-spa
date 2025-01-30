@@ -44,7 +44,7 @@
 
 
 
-============================================= -->
+
 <script src="{{ asset('website/assets/js/jquery-3.4.1.min.js') }}"></script>
 <script src="{{ asset('website/assets/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('website/assets/js/menu.js') }}"></script>
