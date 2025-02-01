@@ -1,5 +1,5 @@
 @extends('website.app')
-@section('title', 'About - Kajal SPA')
+@section('title', 'Blogs - Kajal SPA')
 @section('content')
 
 <div class="inner-page-wrapper">
