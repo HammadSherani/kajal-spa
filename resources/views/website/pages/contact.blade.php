@@ -1,5 +1,9 @@
 @extends('website.app')
-@section('title', 'About - Kajal SPA')
+@section('title', 'Contact us - Kajal SPA')
+@section('head')
+    {{-- add your meta tags and canonical here --}}
+    <meta title="Contact us">
+@endsection
 @section('content')
 
 
